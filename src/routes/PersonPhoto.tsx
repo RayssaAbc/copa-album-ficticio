@@ -105,11 +105,10 @@ export function getPersonPhoto(personKey: string): string {
     loganCosta: "/img/jogadoresTreinadores/loganCosta.png",
     vozinha: "/img/jogadoresTreinadores/vozinha.png",
 
-    
-    
-
-
-
+    //Mascotes
+    canarinho: "/img/jogadoresTreinadores/canarinhoPistola.png",
+    leao: "/img/jogadoresTreinadores/goleoVI.png",
+    naranjito: "/img/jogadoresTreinadores/naranjito.png",
 
   };
   

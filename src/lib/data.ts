@@ -128,6 +128,16 @@ export const teams: Team[] = [
         bio: "Um dos melhores goleiros do mundo.",
         photo: getPersonPhoto("alisson"),
       },
+       {
+        id: "bra-23",
+        name: "Canarinho Pistola",
+        age: 10,
+        experience: "8 anos de carreira e muito ódio no coração!",
+        position: "Mascote",
+        bio: "Um dos melhores atacantes do mundo.",
+        photo: getPersonPhoto("canarinho"),
+      },
+
     ]),
 
 createTeam("mar", "Marrocos", "c", 'MAR', getCountryFlag("marrocos"),
@@ -171,6 +181,7 @@ createTeam("ale", "Alemanha", "e", 'ALE', getCountryFlag("alemanha"),
     { id: "ale-3", name: "Joshua Kimmich", age: 31, experience: "13 anos de carreira", position: "Volante", bio: "Líder e referência técnica.", photo: getPersonPhoto("joshuaKimmich") },
     { id: "ale-4", name: "Antonio Rüdiger", age: 33, experience: "15 anos de carreira", position: "Zagueiro", bio: "Principal defensor alemão.", photo: getPersonPhoto("antonioRudiger") },
     { id: "ale-5", name: "Marc-André ter Stegen", age: 34, experience: "15 anos de carreira", position: "Goleiro", bio: "Goleiro de elite do futebol mundial.", photo: getPersonPhoto("marcStegen") },
+    { id: "ale-06", name: " Goleo VI e Pille", age: 22, experience: "20 anos de carreira", position: "mascote", bio: "Seu número 06 na camisa representa o ano do Mundial, e seu nome combina “gol” com “leo”.", photo: getPersonPhoto("leao") },
   ]),
 
 createTeam("civ", "Costa do Marfim", "e", 'CIV', getCountryFlag("costaMarfim"),
@@ -213,6 +224,7 @@ createTeam("esp", "Espanha", "h", "ESP", getCountryFlag("espanha"),
     { id: "esp-3", name: "Rodri", age: 30, experience: "11 anos de carreira", position: "Volante", bio: "Referência mundial na posição.", photo: getPersonPhoto("rodri") },
     { id: "esp-4", name: "Nico Williams", age: 24, experience: "6 anos de carreira", position: "Atacante", bio: "Velocidade e drible pelas pontas.", photo: getPersonPhoto("nicoWilliams") },
     { id: "esp-5", name: "Unai Simón", age: 29, experience: "11 anos de carreira", position: "Goleiro", bio: "Titular da seleção espanhola.", photo: getPersonPhoto("unaiSimon") },
+    { id: "esp-82", name: "Naranjito", age: 44, experience: "43 anos de carreira", position: "Mascote", bio: "Mascote da copa espanhola.", photo: getPersonPhoto("naranjito") },
   ]),
 
 createTeam("uru", "Uruguai", "h", "URU", getCountryFlag("uruguai"),
@@ -323,17 +335,50 @@ export type CupHistory = {
 
 export const cupHistory: CupHistory[] = [
   { year: 1930, host: "Uruguai", champion: "Uruguai", runnerUp: "Argentina", topScorer: "Guillermo Stábile (8)", highlight: "Primeira Copa do Mundo da história." },
+
+  { year: 1934, host: "Itália", champion: "Itália", runnerUp: "Tchecoslováquia", topScorer: "Oldřich Nejedlý (5)", highlight: "Primeiro título italiano." },
+
+  { year: 1938, host: "França", champion: "Itália", runnerUp: "Hungria", topScorer: "Leônidas (7)", highlight: "Itália conquista o bicampeonato." },
+
   { year: 1950, host: "Brasil", champion: "Uruguai", runnerUp: "Brasil", topScorer: "Ademir (8)", highlight: "Maracanazo no Maracanã." },
+
+  { year: 1954, host: "Suíça", champion: "Alemanha Ocidental", runnerUp: "Hungria", topScorer: "Sándor Kocsis (11)", highlight: "Milagre de Berna." },
+
   { year: 1958, host: "Suécia", champion: "Brasil", runnerUp: "Suécia", topScorer: "Just Fontaine (13)", highlight: "Surgimento de Pelé com 17 anos." },
-  { year: 1970, host: "México", champion: "Brasil", runnerUp: "Itália", topScorer: "Gerd Müller (10)", highlight: "Tri brasileiro e taça Jules Rimet definitiva." },
-  { year: 1986, host: "México", champion: "Argentina", runnerUp: "Alemanha", topScorer: "Gary Lineker (6)", highlight: "Mão de Deus e gol do século de Maradona." },
-  { year: 1994, host: "Estados Unidos", champion: "Brasil", runnerUp: "Itália", topScorer: "Stoichkov e Salenko (6)", highlight: "Tetra brasileiro nos pênaltis." },
+
+  { year: 1962, host: "Chile", champion: "Brasil", runnerUp: "Tchecoslováquia", topScorer: "Flórián Albert, Garrincha, Ivanov, Jerković, Sánchez e Vavá (4)", highlight: "Brasil bicampeão com Garrincha brilhando." },
+
+  { year: 1966, host: "Inglaterra", champion: "Inglaterra", runnerUp: "Alemanha Ocidental", topScorer: "Eusébio (9)", highlight: "Único título inglês." },
+
+  { year: 1970, host: "México", champion: "Brasil", runnerUp: "Itália", topScorer: "Gerd Müller (10)", highlight: "Tri brasileiro e posse definitiva da Taça Jules Rimet." },
+
+  { year: 1974, host: "Alemanha Ocidental", champion: "Alemanha Ocidental", runnerUp: "Holanda", topScorer: "Grzegorz Lato (7)", highlight: "Cruyff encanta apesar do vice." },
+
+  { year: 1978, host: "Argentina", champion: "Argentina", runnerUp: "Holanda", topScorer: "Mario Kempes (6)", highlight: "Primeiro título argentino." },
+
+  { year: 1982, host: "Espanha", champion: "Itália", runnerUp: "Alemanha Ocidental", topScorer: "Paolo Rossi (6)", highlight: "Rossi leva a Itália ao tricampeonato." },
+
+  { year: 1986, host: "México", champion: "Argentina", runnerUp: "Alemanha Ocidental", topScorer: "Gary Lineker (6)", highlight: "Mão de Deus e gol do século de Maradona." },
+
+  { year: 1990, host: "Itália", champion: "Alemanha Ocidental", runnerUp: "Argentina", topScorer: "Salvatore Schillaci (6)", highlight: "Tricampeonato alemão." },
+
+  { year: 1994, host: "Estados Unidos", champion: "Brasil", runnerUp: "Itália", topScorer: "Hristo Stoichkov e Oleg Salenko (6)", highlight: "Tetra brasileiro nos pênaltis." },
+
   { year: 1998, host: "França", champion: "França", runnerUp: "Brasil", topScorer: "Davor Šuker (6)", highlight: "Primeiro título francês em casa." },
-  { year: 2002, host: "Coreia/Japão", champion: "Brasil", runnerUp: "Alemanha", topScorer: "Ronaldo (8)", highlight: "Penta brasileiro com Ronaldo Fenômeno." },
-  { year: 2010, host: "África do Sul", champion: "Espanha", runnerUp: "Holanda", topScorer: "Thomas Müller (5)", highlight: "Primeira Copa na África." },
+
+  { year: 2002, host: "Coreia do Sul/Japão", champion: "Brasil", runnerUp: "Alemanha", topScorer: "Ronaldo (8)", highlight: "Penta brasileiro com Ronaldo Fenômeno." },
+
+  { year: 2006, host: "Alemanha", champion: "Itália", runnerUp: "França", topScorer: "Miroslav Klose (5)", highlight: "Cabeçada de Zidane na final." },
+
+  { year: 2010, host: "África do Sul", champion: "Espanha", runnerUp: "Holanda", topScorer: "Thomas Müller (5)", highlight: "Primeira Copa na África e primeiro título espanhol." },
+
   { year: 2014, host: "Brasil", champion: "Alemanha", runnerUp: "Argentina", topScorer: "James Rodríguez (6)", highlight: "Mineiraço: Alemanha 7x1 Brasil." },
-  { year: 2018, host: "Rússia", champion: "França", runnerUp: "Croácia", topScorer: "Harry Kane (6)", highlight: "Segundo título francês com Mbappé jovem." },
+
+  { year: 2018, host: "Rússia", champion: "França", runnerUp: "Croácia", topScorer: "Harry Kane (6)", highlight: "Segundo título francês com Mbappé em destaque." },
+
   { year: 2022, host: "Catar", champion: "Argentina", runnerUp: "França", topScorer: "Kylian Mbappé (8)", highlight: "Messi conquista enfim a Copa do Mundo." },
+
+  { year: 2026, host: "Estados Unidos, Canadá e México", champion: "Indefinido", runnerUp: "Indefinido", topScorer: "Indefinido", highlight: "Copa do Mundo de 48 seleções." },
 ];
 
 export type QuizQuestion = {
