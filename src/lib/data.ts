@@ -129,7 +129,7 @@ export const teams: Team[] = [
         photo: getPersonPhoto("alisson"),
       },
        {
-        id: "bra-23",
+        id: "bra-16",
         name: "Canarinho Pistola",
         age: 10,
         experience: "8 anos de carreira e muito ódio no coração!",
@@ -411,4 +411,7 @@ export const quizQuestions: QuizQuestion[] = [
   { id: "q18", question: "Qual seleção é conhecida como 'La Albiceleste'?", options: ["Uruguai", "Argentina", "Chile", "Colômbia"], correct: 1 },
   { id: "q19", question: "Quem foi o técnico do Brasil em 2002?", options: ["Tite", "Dunga", "Felipão", "Parreira"], correct: 2 },
   { id: "q20", question: "Em qual ano a Itália foi campeã pela última vez?", options: ["1982", "1990", "2002", "2006"], correct: 3 },
+  { id: "q21", question: "Quem foi o campeão da Copa do Mundo de 2018?", options: ["Argentina", "Croácia", "Alemanha", "França"], correct: 3 },
+  { id: "q22", question: "Qual jogador é conhecido como 'Rei do Futebol'?", options: ["Maradona", "Messi", "Pelé", "Cristiano Ronaldo"], correct: 2 },
+
 ];
